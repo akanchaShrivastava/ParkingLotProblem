@@ -31,14 +31,14 @@ public class ParkingLot {
 
     }
 
-  /*  public void unpark() {
+   public void unpark() {
         System.out.println("Car is unparking");
         NumberOfCars--;
         System.out.println(NumberOfCars);
 
 
     }
-    */
+
 
 
 

@@ -1,19 +1,23 @@
-public class Car {
+public class Car implements Parkable {
 
 
     public Car() {
     }
 
-    public void park(ParkingLot parkingLot) {
 
-        parkingLot.add();
-       // parkingLot.unpark();
-
-
-
+        @Override
+        public void park (ParkingLot parkingLot){
+        System.out.println("Car parking");
+            parkingLot.add();
 
 
+        }
 
+        @Override
+        public void unpark (ParkingLot parkingLot) {
+        System.out.println("Car Unparking");
+parkingLot.unpark();
+
+        }
     }
 
-}
