@@ -1,6 +1,6 @@
 public class ParkingLot {
     private int capacity;
-    private int NumberOfCars = 0;
+    private int NumberOfVehicles = 0;
 
 
     public ParkingLot(int i) {
@@ -8,22 +8,24 @@ public class ParkingLot {
 
     }
 
-    public void add() {
+    public boolean add() {
         if (isFull()) {
             System.out.println("Parking lot is full");
+            return false;
 
         } else {
-            NumberOfCars++;
+            NumberOfVehicles++;
             System.out.println("Parking lot is not full");
-            System.out.println(NumberOfCars);
+            System.out.println(NumberOfVehicles);
 
+            return true;
         }
 
 
     }
 
     public Boolean isFull() {
-        if (capacity == NumberOfCars) {
+        if (capacity == NumberOfVehicles) {
             return true;
         } else
             return false;
@@ -33,8 +35,8 @@ public class ParkingLot {
 
    public void unpark() {
         System.out.println("Car is unparking");
-        NumberOfCars--;
-        System.out.println(NumberOfCars);
+        NumberOfVehicles--;
+        System.out.println(NumberOfVehicles);
 
 
     }

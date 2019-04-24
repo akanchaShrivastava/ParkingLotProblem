@@ -6,9 +6,9 @@ public class Car implements Parkable {
 
 
         @Override
-        public void park (ParkingLot parkingLot){
+        public boolean park (ParkingLot parkingLot){
         System.out.println("Car parking");
-            parkingLot.add();
+           return parkingLot.add();
 
 
         }
@@ -16,7 +16,7 @@ public class Car implements Parkable {
         @Override
         public void unpark (ParkingLot parkingLot) {
         System.out.println("Car Unparking");
-parkingLot.unpark();
+        parkingLot.unpark();
 
         }
     }
