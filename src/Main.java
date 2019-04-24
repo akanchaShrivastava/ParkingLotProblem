@@ -2,15 +2,15 @@ public class Main {
     public static void main(String[] args) {
 
         Parkable car1=new Car();
-        ParkingLot parkingLot=new ParkingLot(2);
+        ParkingLot parkingLot=new ParkingLot(5);
         car1.park(parkingLot);
-        Parkable c2=new Car();
-        c2.park(parkingLot);
+        Parkable car2=new Car();
+        car2.park(parkingLot);
 
         System.out.println(parkingLot.isFull());
 
-        Parkable c3=new Car();
-        c3.park(parkingLot);
+        Parkable car3=new Car();
+        car3.park(parkingLot);
 
 
 
